@@ -1,3 +1,4 @@
+//push heavy
 import java.util.*;
 public class StackUsingQueues{
     Queue<Integer> queue1=new LinkedList<>();
