@@ -1,4 +1,4 @@
-lass Solution {
+class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         //VVIP SORT ARRAY: THEN ONLY THIS TECHNIQUE WILL WORK
         Arrays.sort(nums);
