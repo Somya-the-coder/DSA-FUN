@@ -1,7 +1,7 @@
 class Solution {
     public int[] twoSum(int[] numbers, int target) 
     {
-    //OPTIMAL APPROACH : BRUTEFORCTWO POINTERS(+ SORTED ARRAY)
+    //OPTIMAL APPROACH : TWO POINTERS(+ SORTED ARRAY GIVEN IN QS ELSE YOU SORT)
         int n=numbers.length;
         int ans[]=new int[2];
         int i=0,j=n-1;
