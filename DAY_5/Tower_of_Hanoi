@@ -1,1 +1,28 @@
+//TOWER OF HANOI:----ABDUL BARI SIR: BESTEST EVER VIDEO - BEST USE OF RECURSION(THIS COMPLEX PROBLEM HOW EASILY SOLVED)-For any no. of discs
+// Tower of Hanoi 
+// Remember
+// Three magical steps in recursion:--
+// mover n-1 discs from A to B via C 
+// move a dics from A to C and print A,C(steps)
+// move n-1 discs from B to C via A
 
+/*time complexity using recurrence relation :-
+T(n) = t(n-1) + 1+ t(n-1)
+     = 2t(n-1) + 1
+     = 2^n-1==O(2^n) */
+public class toh {
+    public static void TOH(int n,int A,int B,int C)
+    {
+        if(n>0)
+        {
+            TOH(n-1,A,C,B);//no. of discs,source,using,destination
+            System.out.println("Move disc from "+A+" to "+ C);// rem here A is A but C is B(acc to parameters at header see)
+            TOH(n-1,B,A,C);
+        }
+    }
+
+    public static void main(String args[]) {
+        int n = 3;
+        TOH(n, 1, 2, 3);// each line's value on which disc is moving
+    }
+}
