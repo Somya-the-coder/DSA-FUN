@@ -1,0 +1,42 @@
+class Solution {
+    public boolean[] isArraySpecial(int[] nums, int[][] queries) {
+        int n=nums.length;
+        int count[]=new int[n];
+        count[0]=0;
+        for(int i=1;i<n;i++)
+        {
+            int parity=(nums[i]%2==nums[i-1]%2?1:0);
+            count[i]=count[i-1]+parity;
+        }
+        int m=queries.length;
+        boolean res[]=new boolean[m];
+        for(int i=0;i<m;i++)
+        {
+            int start=queries[i][0];
+            int end=queries[i][1];//one query=[1,2]
+            res[i]=((count[end])-count[start]==0);
+        }
+        return res;
+
+
+    //     //BRUTEFORCE- won't work for 1 long testcase
+    //     int q=queries.length;
+    //     boolean ans[]=new boolean[q];
+    //     for(int i=0;i<q;i++)
+    //     {
+    //         int s=queries[i][0];
+    //         int e=queries[i][1];
+    //         boolean isSpecial=true;
+    //         for(int j=s;j<e;j++)
+    //         {
+    //             if((nums[j]%2) == (nums[j+1]%2))
+    //             {
+    //                 isSpecial=false;
+    //                 break;
+    //             } 
+    //         }
+    //         ans[i]=isSpecial;
+    //     }
+    //     return ans;
+    }
+}
