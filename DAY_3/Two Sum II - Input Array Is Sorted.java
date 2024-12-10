@@ -1,3 +1,4 @@
+//M1:2 POINTER-OPTIMAL
 class Solution {
     public int[] twoSum(int[] numbers, int target) 
     {
@@ -18,7 +19,9 @@ class Solution {
         return ans;
     }
 }
-//         //BRUTEFORCE
+
+
+// //      M2: BRUTEFORCE
 //         int n=numbers.length,c=0;
 //         int ans[]=new int[2];
 //         for(int i=0;i<n;i++)
