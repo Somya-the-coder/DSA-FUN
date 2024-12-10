@@ -1,6 +1,9 @@
+//M1:  bruteforce will be 3 loop laga lo
+
+//M2:  3 POINTERS
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-        //VVIP SORT ARRAY: THEN ONLY THIS TECHNIQUE WILL WORK
+        //VVIP SORT ARRAY: THEN ONLY THIS TECHNIQUE WILL WORK(3 pointer at 1st,2nd,last[2 sum - 2 pointer])
         Arrays.sort(nums);
         List<List<Integer>> ans=new ArrayList<>();
         Set<List<Integer>> set=new HashSet<>();
@@ -26,10 +29,10 @@ class Solution {
         return ans;
     }
 }
-//bruteforce will be 3 loop laga lo
 
 
-//also more optimal 3 sum making it 2 sum
+
+//M3 : Also more optimal 3 sum making it 2 sum
 import java.util.*;
 
 // class Solution {
