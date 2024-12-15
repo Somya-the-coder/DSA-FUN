@@ -16,7 +16,7 @@
 //INVERT DOES'NT MEAN UPSIDE DOWN(IT MEANS MIRROR/SWAP....AND MANY NAMES)
 
 //M1: RECURSION
- //invert means interchange LHS & RHS
+ //invert means interchange LHS & RHS(just 3 things and return root)
 class Solution {
     public TreeNode invertTree(TreeNode root) {
         if(root==null)
@@ -33,7 +33,7 @@ class Solution {
     }
 }
 
-//M2: ITERATIVE(USING LEVEL ORDER TRAVERSAL) -Nikhil Lohia You Tube Channel!(Good Intro- gives interest)
+//M2: ITERATIVE(USING LEVEL ORDER TRAVERSAL: it has iterative code in tree chp) -Nikhil Lohia You Tube Channel!(Good Intro- gives interest)
  //see level order traversal(iterative method of solving this)
 //level order- push in Q , add null in Q , pop from Q and print , push its lhs and rhs children in Q,again add null,pop1,push its children,add null and so on (level order traversal/sorted order in BST Is done)
 //then how to invert a tree- Each time on pushing its L-R Children-swap them in queue (array) itself---inverted order will be printed 
