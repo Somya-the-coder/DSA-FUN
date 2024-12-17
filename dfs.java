@@ -54,3 +54,5 @@ class Solution {
         return ls;
     }
 }
+//T.C=O(V+E)
+//S.C=O(V)
