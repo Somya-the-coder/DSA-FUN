@@ -43,7 +43,7 @@ class GFG {
 // } Driver Code Ends
 
 
-// User function Template for Java
+// User function Template for Java:  ITERATIVE METHOD USING QUEUE
 class Solution {
     // Function to return Breadth First Traversal of given graph.
     public ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
