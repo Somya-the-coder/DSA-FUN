@@ -31,7 +31,7 @@ class GFG {
     }
 }
 
-// } Driver Code Ends: RECURSIVE
+// } Driver Code Ends: DFS=STACK=RECURSIVE
 
 class Solution {
     // Function to return a list containing the DFS traversal of the graph.
