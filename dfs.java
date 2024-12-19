@@ -32,6 +32,7 @@ class GFG {
 }
 
 // } Driver Code Ends: DFS=STACK=RECURSIVE
+//EASIEST CIODE AND BETTER THAN BFS IN AI THEORY CLASS VIJAY SIR SAID+EXPL...WOWIEE
 
 class Solution {
     // Function to return a list containing the DFS traversal of the graph.
