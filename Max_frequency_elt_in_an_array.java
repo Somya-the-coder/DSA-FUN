@@ -15,6 +15,7 @@ class Solution {
         }
         int max=0;
         int elt=0;
+        //no ordering in hashmap- so with need to iterate using these
         for(Map.Entry<Integer,Integer> entry:map.entrySet())//rem both map and entry in interface name is in capital letters
         {
             if(entry.getValue()>max)
