@@ -62,3 +62,35 @@ Iteration: for (Map.Entry<Integer, Integer> entry : map.entrySet())
 
 This loop iterates over each Map.Entry object in the entrySet of the map.
 */
+
+//Look at this code as well
+/*
+class Solution {
+    int maxRepeating(int k, int[] arr) {
+        
+        int maxValue = Arrays.stream(arr).max().orElse(Integer.MIN_VALUE);
+        
+       int[] store = new int[maxValue+1]; 
+ 
+
+        //store the arr at the index of store
+        for(int i=0;i<arr.length;i++){
+            store[arr[i]]+=1;
+        }
+        //return the number that repeated max and small
+        int max=Integer.MIN_VALUE;
+        int maxIndex=-1;
+        
+        for(int i=0;i<store.length;i++){
+            if(store[i]>max){
+                max=store[i];
+                maxIndex=i;
+            }
+        }
+        
+        return maxIndex;
+    }
+}
+// Time Complexity: O(n + m)
+// Space Complexity: O(m)
+*/
