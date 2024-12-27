@@ -70,7 +70,7 @@ for(int i=0;i<n;i++)
 {
     cs=cs+arr[i];
     ms=Math.max(cs,ms);// Update maximum sum
-    if(cs<0)
+    if(cs<0)//no need of carrying on something which may hamper/decrease our sum
         cs=0;// Reset current sum only if it's negative
     // ms=Math.max(cs,ms);// Update maximum sum........do not write here
 }
