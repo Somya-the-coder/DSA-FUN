@@ -12,7 +12,7 @@ class Solution {
             // Odd length palindrome
             int l = i, r = i;
             while (l >= 0 && r < n && s.charAt(l) == s.charAt(r)) {
-                if ((r - l + 1) > resLen) {
+                if ((r - l + 1) > resLen) {//apne kaam par focus: each time we just need the substring and length to compare
                     res = s.substring(l, r + 1);
                     resLen = r - l + 1;
                 }
