@@ -22,7 +22,7 @@ class Pair {
     }
 }
 
-
+//tc=O(N) , sc=O(N)
 class Solution {
     // Function to return a list of nodes visible from the top view
     // from left to right in Binary Tree.
