@@ -12,7 +12,7 @@ class Solution {
         //see gfg perfect animation and code page
         while(top<=bottom && left<=right)
         {
-            //1st print top row,then right col,then bottom row,then left row
+//Overall idea :- //1st print top row,then right col,then bottom row(condition check),then left row(condition check)
             for(int i=left;i<=right;i++)
             {
                 list.add(mat[top][i]);
