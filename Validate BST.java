@@ -7,11 +7,12 @@ public class Solution {
     
     public boolean isValidBST(TreeNode root, long minVal, long maxVal) {
         if (root == null) return true;
-        //if min<curr<max
+        //if !(min<curr<max)
         if (root.val >= maxVal || root.val <= minVal) return false;
         //recursion alw 1st works for left then right subtrees
-        //see TUF channel diag 1st left min remains same & max becomes root value
-        //then opposite in right child- min becomes root and max remais same
+        //see TUF channel diag:
+        //1st in left child- "min remains same" & ""max becomes root value""
+        //then opposite in right child- ""min becomes root"" and "max remais same"
         //hence priceed like these
         return isValidBST(root.left, minVal, root.val) && isValidBST(root.right, root.val, maxVal);
     }
