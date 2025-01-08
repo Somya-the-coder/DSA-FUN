@@ -48,6 +48,8 @@ class Solution {
     // Function to return Breadth First Traversal of given graph.
     public ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
         // simply 1st take array vis and queue and arraylist to return result as input, 
+
+        //just these 3 required
         boolean vis[]=new boolean[V];
         Queue<Integer> q=new LinkedList<>();
         ArrayList<Integer> bfs=new ArrayList<>();
