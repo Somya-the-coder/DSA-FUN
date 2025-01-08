@@ -57,21 +57,21 @@ class Solution {
         vis[0]=true;
         
         //keep on emptying until q is empty(BEGIN a -"while loop")
-        while(!q.isEmpty()){
+     while(!q.isEmpty()){
         //dequeue one by one elts, arrlist m add that node(or simply array make make it true)
             Integer node=q.poll();
         //as soon as popped add to ans arraylist
             bfs.add(node);
             
         //visit adj list of "node=which is just now popped"
-        for(Integer it:adj.get(node)){
-            if(vis[it]==false)
-            {
+            for(Integer it:adj.get(node)){
+                if(vis[it]==false)
+                {
             //check if node's neighbour is not visited - make it true as already popped from Q
-                vis[it]=true;
+                    vis[it]=true;
             //add its adj elts (which u got by traversing its adj list-given in Qs"connected undirected graph represented by an adjacency list adj, which is a vector of vectors where each adj[i] represents the list of vertices connected to vertex i") to the Q
-                q.add(it);
-            }
+                    q.add(it);
+                }
         }
             
         }
