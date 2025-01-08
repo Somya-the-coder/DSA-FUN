@@ -71,7 +71,7 @@ class Solution {
 // }
 
 //USING TOPOLOGICAL SORT(BFS)...ALSO DFS WE CAN TOPO SORT - no recursion
-//IF TOPO SORT EXIST , ITS A DAG(A- CYCLIC/NON- CYCLIC GRAPH)
+//IF TOPO SORT EXIST , ITS A DAG(ACYCLIC/NON- CYCLIC GRAPH)
 public boolean isCyclic(int V,ArrayList<ArrayList<Integer>> adj)
 {
     int[] inDegree=new int[V];
