@@ -1,6 +1,8 @@
 //STACK USING JCF
 //tc=O(1),sc=O(n)
-//for dynamic size array- use arraylist
+//for dynamic size array- For a variable-sized stack, <inbuilt built using arraylist only>
+//the default Stack class works, but ArrayDeque or LinkedList is preferred
+//for better performance and modern code practices.
 
 import java.util.*;
 class Stack_basic
