@@ -1,4 +1,6 @@
 //STACK USING JCF
+//tc=O(1),sc=O(n)
+//for dynamic size array- use arraylist
 
 import java.util.*;
 class Stack_basic
