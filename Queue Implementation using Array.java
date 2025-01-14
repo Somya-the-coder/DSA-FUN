@@ -30,6 +30,10 @@ where the first person in line is the first person served.
 */
 
 //tc all operations=1, sc=n
+
+//define fifo,operations,edge cases,real life eg ofthe word q itself(like mess mei line), application- scheduling, bfs implementation....where as stack application= valid parenthesis,backtracking(recursion),undo/redo,browser history,dfs,string reversal.
+// interviewer tricks-- so draw and explain------> 1,2,4,0,91...highlight and tell front and rear positions(front=rear=0 & size=5)...array staic size(prev defined)
+//when queue full rear=size i.e 5...if front dequeues' and go till 5 then underflow happens...also to push more-once rear=5, shift each elt towards left
 class MyQueue {
 
     int front, rear;
@@ -68,3 +72,10 @@ class MyQueue {
         return s;
 	}
 }
+/*
+Issue:-
+but above code what if front=2, rear=arr.length, and there is space how can we insert?
+Ans=To fix this issue, we can use a circular queue implementation, which allows the queue to wrap around and use the available space efficiently.
+
+tabs navigation is eg of doubly LL (& stk we can say)
+*/
