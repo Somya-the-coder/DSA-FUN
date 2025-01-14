@@ -9,6 +9,11 @@ the last element inserted is the first to be popped out. It means both insertion
 happen at one end only.
 */
 
+
+//to the interviewer:smart ans-
+//fifo,operations,real life eg(books and all) ,stack application= valid parenthesis,backtracking(recursion),
+//undo/redo,browser history,dfs,string reversal 
+//implementation tech- Array,JCF(tc sc same as array just push pop direct functions/methods in java), LL se implemented
 import java.util.*;
 //a var top is maintained initialized with -1, & operations are push ,pop,peek
 /*You can resolve this issue by making top a class-level static variable (shared across all methods in the class), ensuring its value persists and is updated correctly. */
