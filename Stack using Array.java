@@ -1,6 +1,16 @@
 //tc=1, sc=n...they're based on - no. of inputs(n) & no. of instructions/lines....& obviously not real global time
+/*Disadvantages of Array Implementation:
+It is not dynamic i.e., it doesn’t grow and shrink depending on needs at runtime. [But in case of dynamic sized arrays like vector in C++, list in Python, ArrayList in Java, stacks can grow and shrink with array implementation as well].
+The total size of the stack must be defined beforehand.
+
+Definition:-
+Stack is a linear data structure that follows LIFO (Last In First Out) Principle, 
+the last element inserted is the first to be popped out. It means both insertion and deletion operations 
+happen at one end only.
+*/
 
 import java.util.*;
+//a var top is maintained initialized with -1, & operations are push ,pop,peek
 /*You can resolve this issue by making top a class-level static variable (shared across all methods in the class), ensuring its value persists and is updated correctly. */
 
 class A{
@@ -19,7 +29,7 @@ class A{
     
         // Pop operation
         public static void pop(int arr[]) {
-            if (top < 0) { // Check for stack underflow
+            if (top == -1) { // Check for stack underflow
                 System.out.println("Stack Underflow");
                 return;
             }
@@ -29,7 +39,7 @@ class A{
     
         // Peek operation
         public static void peek(int arr[]) {
-            if (top < 0) { // Check if the stack is empty
+            if (top == -1) { // Check if the stack is empty
                 System.out.println("Stack is Empty");
                 return;
             }
