@@ -81,3 +81,15 @@ Ans=To fix this issue, we can use a circular queue implementation, which allows 
 
 tabs navigation is eg of doubly LL (& stk we can say)
 */
+
+//QUEUE IMPLEMENTATION JCF
+class A
+{
+    public static void main(String args[]){
+    Queue<Integer> q=new LinkedList<>();//queue is interface(having some methods) and is called using a class
+    q.offer(1);
+    System.out.println(q);//[1]...as list format as class is linkedlist
+    System.out.println(q.poll());//1
+    System.out.println(q.peek());//null
+    }
+}
