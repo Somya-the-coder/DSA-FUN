@@ -34,6 +34,8 @@ where the first person in line is the first person served.
 //define fifo,operations,edge cases,real life eg ofthe word q itself(like mess mei line), application- scheduling, bfs implementation....where as stack application= valid parenthesis,backtracking(recursion),undo/redo,browser history,dfs,string reversal.
 // interviewer tricks-- so draw and explain------> 1,2,4,0,91...highlight and tell front and rear positions(front=rear=0 & size=5)...array staic size(prev defined)
 //when queue full rear=size i.e 5...if front dequeues' and go till 5 then underflow happens...also to push more-once rear=5, shift each elt towards left
+
+// usually q using array is used with circular q, only q use JCF/LL(Famous interview qs)/Array-shown here
 class MyQueue {
 
     int front, rear;
