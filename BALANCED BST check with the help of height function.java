@@ -22,7 +22,7 @@ class Solution {
         {
             if(root==null)  return 0;
             
-            int lh=dfs_height(root.left); if(lh==-1)    return -1;
+            int lh=dfs_height(root.left); if(lh==-1)    return -1;//in case any subtree returns -1 (not balanced) return -1 then & there
             int rh=dfs_height(root.right); if(rh==-1)   return -1;
         
             if(Math.abs(lh-rh)>1)    return -1;
