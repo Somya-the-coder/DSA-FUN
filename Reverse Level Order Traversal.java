@@ -16,7 +16,7 @@ class Tree {
             else
             {
                 ans.add(node.data);
-                //just add right child 1st then left
+                // LLOOGGIICC LINE....................:-just add right child 1st then left
                 if(node.right!=null)    q.add(node.right);
                 if(node.left!=null) q.add(node.left);
             }
