@@ -1,7 +1,7 @@
 class Solution {
     public void reverseArray(int arr[]) {
         
-        // M2:IN-PLACE REVERSAL-2 pointers Approach:starting from 1st and last 
+        // M2:IN-PLACE REVERSAL-2 pointers Approach:starting from 1st and last ...half tak run loop and reverse
         int i=0,j=arr.length-1,temp=0;
         //for(int k=0;k<arr.length/2;k++)//...length/2 remember else(if ru run till whole length : original form comes
         while(i<j)//I<=J CAUSES TLE
@@ -17,7 +17,7 @@ class Solution {
         
         
         
-        // // M1:BRUTEFORCE
+        // // M1:BRUTEFORCE...take a new array 
         // int l=arr.length;
         // int a[]=new int[l];
                 // // a=arr;//it can't be done bcz u doubly initialized a
