@@ -35,12 +35,12 @@ class Solution {
         for(int i=n-1;i>=0;i--)
         {
             while(!stk.isEmpty() && stk.peek()<=arr[i])//<= writing is imp
-                stk.pop();
+                stk.pop();//keep on popping until you find next greater value at top
                 
             if(!stk.isEmpty())
-                list.set(i,stk.peek());//set method in arrlist is used for inserting at desired index else u know use add()
+                list.set(i,stk.peek());//put the peek elt in result list...set method in arrlist is used for inserting at desired index else u know use add()
             
-            stk.push(arr[i]);
+            stk.push(arr[i]);//alw executed
         }
         return list;
     }
