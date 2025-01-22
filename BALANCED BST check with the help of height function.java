@@ -12,7 +12,7 @@ class Node
 } */
 
 class Solution {
-    public boolean isBalanced(Node root) {//or do inorder traversal if comes sorted then its a BST
+    public boolean isBalanced(Node root) {//No don't use here...its used to validate bst=>or do inorder traversal if comes sorted then its a BST
         // code here
         //tc=sc=O(n)
         return dfs_height(root)!=-1;//then return true else false
