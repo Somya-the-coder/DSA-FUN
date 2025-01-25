@@ -1,3 +1,4 @@
+// tc=O(e);sc=O(n+e)
 class Solution {
     static int checkMirrorTree(int n, int e, int[] A, int[] B) {
         //1 if mirror else 0...arrray mei solve this qs
@@ -28,7 +29,7 @@ class Solution {
             List<Integer> children2 = tree2.get(key);
 
             // Reverse the children list of tree2
-            Collections.reverse(children2);
+            Collections.reverse(children2);//list only we can reverse
 
             // If they are not identical, the trees are not mirrors
             if (!children1.equals(children2)) {
