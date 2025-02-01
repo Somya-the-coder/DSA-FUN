@@ -11,6 +11,12 @@ class Node
     }
 }
 */
+
+/*sum(root.left) + sum(root.right) → Calculates the sum of left and right subtrees.
+root.data == sum(root.left) + sum(root.right) → Checks if the current node's value is equal to this sum.
+isSumTree(root.left) && isSumTree(root.right) → Recursively verifies if the left and right subtrees are also Sum Trees.
+tc=O(n^2)...as 2 functions are called
+*/
 class Solution {
     
     
