@@ -1,6 +1,10 @@
-// tc=sc=O(height of bst)
+// // tc=sc=O(height of bst)
+// inorder suc=leftmost node in right subtree
+// inorder pred=rightmost node in the left subtree
 class Solution {
     public static void findPreSuc(Node root, Node[] pre, Node[] suc, int key) {
+//REM: RECURSION NOT REQUIRED IN THIS TREE QS...NEECHE JAAKR CHECK KRNA HAI BAS ...NOT SUM/MIRROR AND ALL!...KRKE KUCH RETURN KRNA HAI
+        
         // code here.
         // update pre[0] with the predecessor of the key
         // update suc[0] with the successor of the key
