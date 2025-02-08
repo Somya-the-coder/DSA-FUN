@@ -22,3 +22,39 @@ Class Solution
 //S.C=O(1)
 //ALSO WE can do it using hashmap- tracking the already traveresed node(if again reached means there exists a cycle- but here t.c toh O(n) hai hi and s.c. also is O(n)
 //So above hare-turtoise approach is optimal and goooood
+
+
+
+
+//again practice
+/*
+// User function template for JAVA
+
+/* Node is defined as
+
+class Node
+{
+    int data;
+    Node next;
+    Node(int d) {data = d; next = null; }
+}
+
+
+class Solution {
+    // Function to check if the linked list has a loop.
+    public static boolean detectLoop(Node head) {
+        // Add code here
+        //loop in LL=2 pointers i.e. [hare-turtle / fast-slow]
+        Node fast=head;
+        Node slow=head;
+        while(fast!=null && fast.next!=null)
+        {
+            fast=fast.next.next;
+            slow=slow.next;
+            if(fast==slow)
+                return true;
+        }
+        return false;
+    }
+}
+*/
