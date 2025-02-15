@@ -15,3 +15,11 @@ class Solution {
     }
 }
 //Time Complexity: O(N), as we traverse the array once and then the map.Space Complexity: O(N), as we store frequencies in a HashMap.
+
+/*
+Brute Force Time Complexity: 
+𝑂
+(𝑁^2), as we check the count of each element by traversing the array for every element.
+Space Complexity: 
+𝑂(1) as no extra space is used.
+*/
