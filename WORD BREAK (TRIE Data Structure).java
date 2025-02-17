@@ -1,3 +1,5 @@
+//TRIE EXAMPLE- AUTOCOMPLETE / SUGGESTIONS FEATURE WHILE WE TYPE
+
 class TrieNode {
     TrieNode[] children;
     boolean isEndOfWord;
