@@ -4,7 +4,7 @@ class Solution {
         int count=0;
         while(n!=0)
         {
-            //if(n%10==1) count++;
+            //if(n%10==1) count++;//...remember...Yes, n & 1 works in binary, even if n is given in decimal....thats why this line works taking n as decimal , & so no correct output
             if((n&1) != 0)    count++;//n&1==0 then even else odd---this concept is used here
             n=n>>1;
         }
