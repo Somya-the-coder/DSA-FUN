@@ -5,7 +5,7 @@ class Node
     Node next;
 }
 */
-
+//cycle at head is a confusing corner case - usually contests do not keep it
 class Solution {//                  tc=O(n), sc=O(1)
     // Function to remove a loop in the linked list.
     public static void removeLoop(Node head) {
@@ -37,7 +37,7 @@ class Solution {//                  tc=O(n), sc=O(1)
         slow=head;
         // Node prev=null;//.NO USE
 
-//THIS CASE HANDLING OS VIP
+//THIS CASE HANDLING IS VIP
         //if loop starts from head,we need special handling
         if(slow==fast){
             while(fast.next!=slow){//move fast till it reaches the last node
