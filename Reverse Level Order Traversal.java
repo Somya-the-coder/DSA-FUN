@@ -26,3 +26,28 @@ class Tree {
 
     }
 }
+//tc=sc=O(N)
+/*
+expalin like this:-
+### **Time Complexity (TC) & Space Complexity (SC) Analysis**  
+
+#### **Time Complexity (TC):**  
+- Each node is visited **once** in the while loop → **O(N)**
+- Removing elements from the queue → **O(1)** per operation
+- Adding elements to the queue → **O(1)** per operation
+- **Reversing the list** at the end → **O(N)**  
+
+**Total Time Complexity:**
+\[
+O(N) + O(N) = O(N)
+\]
+
+#### **Space Complexity (SC):**  
+- **Queue (`q`)** stores at most one level of the tree at a time. In the worst case (for a balanced binary tree), it can store **O(N/2) ≈ O(N)** nodes.
+- **ArrayList (`l`)** stores **all N nodes** → **O(N)**
+- **Overall SC:** **O(N) + O(N) = O(N)**  
+
+### **Final Complexity:**
+- **Time Complexity: O(N)**
+- **Space Complexity: O(N)**
+*/
