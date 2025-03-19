@@ -87,6 +87,8 @@ Binary search on H → O(log maxHeight).
 Wood collection (each iteration) → O(N).
 Overall Complexity: O(N log maxHeight). 🚀 Efficient for large inputs!
 
+overall s.c.=O(1)
+
 
 //why BIN SEARCH:-
 .
