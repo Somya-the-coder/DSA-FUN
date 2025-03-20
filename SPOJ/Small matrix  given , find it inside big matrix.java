@@ -1,6 +1,6 @@
 /*
 Brute Force: Simple but too slow.
-Optimized (Hashing + Sliding Window): 🚀 Efficient, works well for large inputs.
+Optimized (Hashing(HashSet= simple) + Sliding Window(each window check in HashSet)): 🚀 Efficient, works well for large inputs.
 
 NOTE:--------------------------
 📝 Rule of Thumb:
