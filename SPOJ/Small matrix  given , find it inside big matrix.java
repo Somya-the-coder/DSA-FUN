@@ -1,6 +1,12 @@
 /*
 Brute Force: Simple but too slow.
 Optimized (Hashing + Sliding Window): 🚀 Efficient, works well for large inputs.
+
+NOTE:--------------------------
+📝 Rule of Thumb:
+
+If you're finding the largest (maximization problem) → 🔍 Binary Search!
+If you're just finding an occurrence → ❌ No need for Binary Search!
 */
 import java.util.*;
 
