@@ -11,6 +11,7 @@ class Solution {
 // height(“5”) = max(height(NULL), height(‘NULL’)) + 1 = (-1) + 1 = 0
 // height(“11”) = max(height(NULL), height(‘NULL’)) + 1 = (-1) + 1 = 0
     
+//tree any qs =traversal like LL(O(n)) so tree's bestie=recursion, recursion has base case, self-call , base-case
     
 //M1: recursion ...tc=O(n) , sc=O(1)
     int height(Node node) {
