@@ -35,3 +35,29 @@ class Solution {
         return diameter1(root).diam;
     }
 }
+
+/*
+//TLE EXCEEDED TC=O(N^2),SC=O(N)
+class Solution {
+
+    
+    int diameter(Node root) {
+        // Your code here
+        //base case
+        if(root==null)  return 0;
+        int lh=height(root.left);
+        int rh=height(root.right);
+        int selfdiam=lh+rh;
+        int ld=diameter(root.left);
+        int rd=diameter(root.right);
+        return Math.max(selfdiam,Math.max(ld,rd));
+    }
+    
+    int height(Node root)
+    {
+        if(root==null) return 0;
+        return Math.max( height(root.left) , height(root.right) ) + 1 ;
+    }
+}
+
+*/
