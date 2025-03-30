@@ -9,7 +9,7 @@ class GFG
 	    Queue<Node> q=new LinkedList<>();
 	    q.add(root);
 	    boolean lefttoright=true;
-	    //no khela of NULL
+	    //no khela of NULL but khela of size
 	    while(!q.isEmpty())
 	    {
 	        int size=q.size();//no. of nodes at the current level
@@ -25,7 +25,7 @@ class GFG
 	        }
 
             //REVERSE the order if its not left to right level
-            if(!lefttoright)
+            if(!lefttoright)                                    ////level 1 par (!true=false) so won't reverse and neeche jakar its value becomes false so that in 2nd level it can enter this for loop
             {
                 Collections.reverse(level);
             }
