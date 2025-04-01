@@ -67,3 +67,9 @@ https://www.techiedelight.com/postorder-tree-traversal-iterative-recursive/
 | Inorder (Left → Root → Right)  | O(N)           | O(N) (Recursive) / O(N) (Iterative) | Recursive & Iterative  |
 | Postorder (Left → Right → Root)| O(N)           | O(N) (Recursive) / O(N) (Iterative) | Recursive & Iterative  |
 | Level Order (BFS using Queue)  | O(N)           | O(N) (uses Queue)                  | Iterative              |
+
+/*
+iterative in, pre, post is same like dfs stack code<as uses stack>
+
+level is same like bfs queue code
+*/
