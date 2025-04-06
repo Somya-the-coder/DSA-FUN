@@ -15,7 +15,7 @@
 
 class Solution {
     public static Node findFirstNode(Node head) {
-        // code here
+        // code here 
         Node slow=head,fast=head;
         int j=0;
         while(fast!=null && fast.next!=null)
