@@ -8,7 +8,7 @@ class Reversing {
 
         // Reading total number of test cases
         int t = Integer.parseInt(br.readLine());
-        while (t-- > 0) {
+        while (t-- > 0) { 
 
             // Creating a Queue
             Queue<Integer> queue = new LinkedList<>();
