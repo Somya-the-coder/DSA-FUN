@@ -3,7 +3,7 @@ class Solution {
     {
         long sum=0;
         int max=0,index=0;
-        while(k>0)
+        while(k>0) 
             {
                 for(int j=0;j<gifts.length;j++)
                 {
