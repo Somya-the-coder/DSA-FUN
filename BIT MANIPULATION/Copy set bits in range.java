@@ -1,4 +1,4 @@
-//Bitwise operations (<<, &, |) take constant time , so T.C.=O(1)
+ //Bitwise operations (<<, &, |) take constant time , so T.C.=O(1)
 //We use only a few integer variables (mask, x, y, l, r), which take constant space. so S.C.=o(1)
 //O(1) in a fixed-size integer.
 
